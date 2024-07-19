@@ -1,0 +1,37 @@
+{
+  "name": "@ethafeng/antd-color-picker",
+  "version": "1.0.0",
+  "description": "基于vue3+Antd Vue3的颜色选择器",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "ant",
+    "design",
+    "antd-vue",
+    "color-picker",
+    "colorpicker",
+    "ColorPicker"
+  ],
+  "files": [
+    "index.js",
+    "src"
+  ],
+  "author": "fengjiqiang",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "@vue/shared": "^3.3.8",
+    "ant-design-vue": "^3.2.20",
+    "dayjs": "^1.11.7",
+    "lodash-es": "^4.17.21",
+    "vue": "^3.2.45"
+  },
+  "engines": {
+    "node": ">= 16.0.0",
+    "pnpm": ">= 7.0.0"
+  }
+}
