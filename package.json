@@ -2,7 +2,14 @@
   "name": "@ethafeng/antd-color-picker",
   "version": "1.0.0",
   "description": "基于vue3+Antd Vue3的颜色选择器",
-  "main": "index.js",
+  "main": "./dist/antd-vue-color-picker.umd.js",
+  "module": "./dist/antd-vue-color-picker.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/antd-vue-color-picker.es.js",
+      "require": "./dist/antd-vue-color-picker.umd.js"
+    }
+  },
   "scripts": {
     "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,8 +25,7 @@
     "ColorPicker"
   ],
   "files": [
-    "index.js",
-    "src"
+    "dist"
   ],
   "author": "fengjiqiang",
   "license": "ISC",
@@ -28,10 +34,13 @@
     "@vue/shared": "^3.3.8",
     "ant-design-vue": "^3.2.20",
     "dayjs": "^1.11.7",
+    "esbuild": "^0.23.0",
     "lodash-es": "^4.17.21",
     "vue": "^3.2.45"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "sass": "^1.59.3",
     "vite": "^4.3.3"
   },
   "engines": {

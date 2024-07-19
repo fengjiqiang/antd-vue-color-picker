@@ -1,3 +1,11 @@
+<!--
+ * @Author: fengjiqiang
+ * @Date: 2024-07-19 15:54:57
+ * @LastEditors: fengjiqiang
+ * @LastEditTime: 2024-07-19 16:06:17
+ * @FilePath: \antd-vue-color-picker\src\main.vue
+ * @Description: 
+-->
 <template>
   <a-popover
     v-model:visible="showPicker"
@@ -9,8 +17,8 @@
   >
     <template #content>
       <div class="ant-color-dropdown__main-wrapper">
-        <SvPanel ref="svPanel" :color="color" />
-        <HueSlider ref="hue" class="hue-slider" :color="color" vertical />
+        <sv-panel ref="svPanel" :color="color" />
+        <hue-slider ref="hue" class="hue-slider" :color="color" vertical />
       </div>
       <AlphaSlider v-if="showAlpha" ref="alpha" :color="color" />
       <preDefine v-if="predefine.length" ref="predefine" :color="color" :colors="predefine" />
