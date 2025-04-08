@@ -1,6 +1,6 @@
-import { defineConfig } from "vite"
+import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import { resolve } from "path"
+import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode, command }) => {
@@ -16,8 +16,14 @@ export default defineConfig(({ mode, command }) => {
         fileName: (format) => `antd-vue-color-picker.${format}.js`,
       },
       rollupOptions: {
-        external: ["vue"], // 外部依赖
-      }
-    }
-  }
-})
+        external: ["vue", "ant-design-vue"], // 外部依赖
+        output: {
+          globals: {
+            vue: "Vue",
+            "ant-design-vue": "antd",
+          },
+        },
+      },
+    },
+  };
+});

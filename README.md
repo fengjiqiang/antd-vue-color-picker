@@ -3,7 +3,7 @@
 ## 使用
 
 ```js
-import { ColorPicker } from 'antd-vue-color-picker'
+import { ColorPicker } from '@ethafeng/antd-color-picker'
 
 <color-picker v-model="currentcolor" :predefine="predefineColors" @change="selectColorPicker" />
 ```

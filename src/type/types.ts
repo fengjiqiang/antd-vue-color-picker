@@ -6,4 +6,4 @@ export interface Options {
 
 export type Nullable<T> = T | null
 
-export type ComponentSize = 'large' | 'default' | 'small'
+export type ComponentSize = 'large' | 'default' | 'small' | 'xsmall'
