@@ -1,6 +1,6 @@
 {
   "name": "@ethafeng/antd-color-picker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "基于vue3+Antd Vue3的颜色选择器",
   "main": "./dist/antd-vue-color-picker.umd.js",
   "module": "./dist/antd-vue-color-picker.es.js",
